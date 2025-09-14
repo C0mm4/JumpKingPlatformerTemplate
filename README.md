@@ -9,7 +9,17 @@
 - **의존성**: Unity new Input System (플레이어 이동) - 이동을 제외한 떨어짐 모듈만 실행 시 적용하지 않아도 됨.
 ---
 
-## 2. 적용 방법 (Usage / Setup)  
+## 2. 키 입력 (Key Bindings)  
+
+| 키(Key) | 동작(Action)        | 설명(Description)             |
+|---------|---------------------|--------------------------------|
+| **A**   | Move Left           | 캐릭터를 왼쪽으로 이동 |
+| **D**   | Move Right          | 캐릭터를 오른쪽으로 이동 |
+| **Space** | Jump               | 캐릭터가 점프 |
+
+---
+
+## 3. 적용 방법 (Usage / Setup)  
 ### GameObject Inspector 연결 방식  
 1. Player GameObject 생성
 2. Collider2D, RigidBody2D 추가 (Rigidbody는 없으면 자동 생성, Collider2D는 필수로 추가해야함)
@@ -19,7 +29,7 @@
 
 ---
 
-## 3. 주요 기능 (Features)  
+## 4. 주요 기능 (Features)  
 - Kinematic Rigidbody2D를 활용한 물리 엔진
 - FSM을 적용한 Player Status Machine
 - IState와 IPlayerState로 객체의 상태 관리
